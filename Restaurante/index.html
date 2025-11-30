@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/favicon.ico">
+    <title>Restaurante Sabor Auténtico</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <header>
+            <div class="logo-menu">Restaurante
+                <input type="checkbox" name="menu" id="menu-movil">
+                <label for="menu-movil" id="menu-movil-label">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </label>
+            </div>
+            <nav>
+                <a href="./pages/tienda.html">Tienda</a>
+                <a href="./pages/tienda-info.html">Información tienda</a>
+                <a href="./pages/contacto.html">Sobre nosotros</a>
+                <a href="./pages/contacto.html">Contacto</a>
+                <a class="button" href="#articulos">Ver el Menú</a>
+            </nav>
+        </header>
+        <div class="cuerpo">
+            <div class="portada">
+                <h1>Sabores Tradicionales, Experiencias Memorables</h1>
+                <p>El lugar donde la cocina local se encuentra con la pasión. Descubre nuestros platos hechos con ingredientes frescos y de temporada.</p>
+                <a href="#articulos" class="button">Ver Menú Principal</a>
+                <img src="./img/portada.webp" srcset="./img/portada.webp 1000w, ./img/portada-800.webp 800w"
+                    sizes="70vw" alt="Mesa de restaurante con platos de alta cocina" loading="eager">
+            </div>
+            <section class="articulos" id="articulos">
+                <h1>Nuestros Platos Estacionales Destacados</h1>
+                <div class="fotos">
+                    <article class="foto">
+                        <img src="./img/steak.webp" srcset="./img/steak.webp 1000w, ./img/steak-800.webp 800w"
+                            sizes="50vw" alt="Filete a la parrilla con guarnición" loading="lazy">
+                        <h3>Solomillo de Ternera al Vino Tinto</h3>
+                        <p>El corte más selecto, cocinado a la perfección con una reducción de vino tinto y especias.</p>
+                    </article>
+                    <article class="foto">
+                        <img src="./img/pasta.webp" srcset="./img/pasta.webp 1000w, ./img/pasta-800.webp 800w"
+                            sizes="50vw" alt="Plato de pasta fresca con tomate" loading="lazy">
+                        <h3>Pasta Fresca Casera con Ragú</h3>
+                        <p>Pasta hecha a mano diariamente, acompañada de nuestra salsa ragú tradicional a fuego lento.</p>
+                    </article>
+                    <article class="foto">
+                        <img src="./img/chipis.webp" srcset="./img/chipis-800.webp 800w, ./img/chipis.webp 1000w"
+                            sizes="50vw" alt="Chipirones fritos con limón" loading="lazy">
+                        <h3>Chipirones Fritos a la Andaluza</h3>
+                        <p>Una tapa clásica: calamares pequeños rebozados y fritos, servidos con limón fresco.</p>
+                    </article>
+                </div>
+            </section>
+            <section class="informacion">
+                <div class="texto">
+                    <h1>Ingredientes Frescos, Calidad Garantizada</h1>
+                    <div class="parrafo">
+                        <h3>De la Huerta a tu Mesa</h3>
+                        <p>Trabajamos directamente con agricultores locales para asegurar la máxima frescura y apoyar a nuestra comunidad. Proporcionamos detalles, explicaciones y contexto.</p>
+                    </div>
+                    <div class="parrafo">
+                        <h3>Recetas con Historia Familiar</h3>
+                        <p>Nuestros platos se basan en recetas transmitidas por generaciones, manteniendo la esencia de la cocina de nuestra abuela. Proporcionamos detalles, explicaciones y contexto.</p>
+                    </div>
+                    <div class="parrafo">
+                        <h3>Un Ambiente Acogedor</h3>
+                        <p>Disfruta de tu comida en un entorno cálido y familiar, ideal para cualquier celebración o una cena tranquila. Proporcionamos detalles, explicaciones y contexto.</p>
+                    </div>
+                    <img class="img-movil" src="./img/pure.webp"
+                        srcset="./img/pure.webp 1000w, ./img/pure-800.webp 800w" sizes="50vw" alt="Puré de patatas cremoso" loading="lazy">
+                    <div class="botones">
+                        <a href="./pages/contacto.html" class="button">Contactar / Reservar</a>
+                        <a href="./pages/tienda.html" class="button-alt">Visita Nuestra Tienda</a>
+                    </div>
+                </div>
+                <img class="img-desk" src="./img/pure.webp" srcset="./img/pure.webp 1000w, ./img/pure-800.webp 800w"
+                    sizes="50vw" alt="Puré de patatas cremoso" loading="lazy">
+            </section>
+            <section class="reseñas">
+                <h1>Lo Que Dicen Nuestros Clientes</h1>
+                <div class="opiniones">
+                    <article class="opinion">
+                        <p class="titulo">¡Una experiencia gastronómica increíble!</p>
+                        <div class="mensaje">
+                            <img src="./img/profile.svg" alt="Icono de perfil" class="perfil">
+                            <p class="nombre">Laura M.</p>
+                            <p class="descripcion">El ambiente es perfecto y el trato del personal inmejorable. Probamos el solomillo y la tarta de queso, ¡ambos sublimes! Definitivamente volveremos para seguir probando el resto del menú.
+                                Recomiendo encarecidamente este lugar a cualquiera que busque cocina auténtica y de calidad. Sin duda, es el mejor restaurante de la zona.</p>
+                        </div>
+                    </article>
+                    <article class="opinion">
+                        <p class="titulo">La mejor pasta fresca que he probado</p>
+                        <div class="mensaje">
+                            <img src="./img/profile.svg" alt="Icono de perfil" class="perfil">
+                            <p class="nombre">Javier R.</p>
+                            <p class="descripcion">La pasta fresca casera con ragú es un espectáculo. Se nota que cada ingrediente ha sido seleccionado con sumo cuidado. Tienen un servicio rápido y muy atento.
+                            Me encantó que también ofrezcan productos frescos para llevar a casa. Volveré pronto a por más limones y naranjas!</p>
+                        </div>
+                    </article>
+                    <article class="opinion">
+                        <p class="titulo">Un servicio fantástico y platos deliciosos</p>
+                        <div class="mensaje">
+                            <img src="./img/profile.svg" alt="Icono de perfil" class="perfil">
+                            <p class="nombre">María P.</p>
+                            <p class="descripcion">¡Súper recomendado! El personal es muy amable y los platos son de diez.</p>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+            <section class="contacto" id="reserva">
+                <h1>¿Listo para Probar Nuestros Sabores?</h1>
+                <div class="botones">
+                    <a href="./pages/contacto.html" class="button">Contáctanos</a>
+                    <a href="#articulos" class="button-alt">Ver el Menú</a>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <div class="footer-left">
+                <div class="footer-logo">Restaurante</div>
+                <div class="footer-socials">
+                    <a aria-label="Facebook">
+                        <svg class="social-icon">
+                            <use href="./img/fb-ico.svg#icon"></use>
+                        </svg>
+                    </a>
+                    <a aria-label="Linkedin">
+                        <svg class="social-icon">
+                            <use href="./img/ln-ico.svg#icon"></use>
+                        </svg>
+                    </a>
+                    <a aria-label="Instagram">
+                        <svg class="social-icon">
+                            <use href="./img/ig-ico.svg#icon"></use>
+                        </svg>
+                    </a>
+                    <a aria-label="Youtube">
+                        <svg class="social-icon">
+                            <use href="./img/yt-ico.svg#icon"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Menú</th>
+                            <th>Legal</th>
+                            <th>Soporte</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="">Primeros</a></td>
+                            <td><a href="">Aviso Legal</a></td>
+                            <td><a href="">Preguntas Frecuentes</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="">Segundos</a></td>
+                            <td><a href="">Política de Privacidad</a></td>
+                            <td><a href="">Horarios y Ubicación</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="">Postres</a></td>
+                            <td><a href="">Política de Cookies</a></td>
+                            <td><a href="">Trabaja con Nosotros</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="https://unpkg.com/lenis@1.3.15/dist/lenis.min.js" loading="lazy"></script>
+<script loading="lazy">
+    if (!window.matchMedia('(max-width:500px)').matches) {
+        const lenis = new Lenis({
+            autoRaf: true,
+        });
+    }
+</script>
+
+</html>

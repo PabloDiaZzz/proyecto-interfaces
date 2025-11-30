@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - MotoGarage</title>
+    <link rel="icon" type="image/png" href="../img/favicon.ico">
+</head>
+
+<body>
+    <div class="main-container">
+        <header>
+            <div class="logo-menu">MotoGarage
+                <input type="checkbox" name="menu" id="menu-movil">
+                <label for="menu-movil" id="menu-movil-label">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </label>
+            </div>
+            <nav>
+                <a href="../pages/tienda-info.html">Información tienda</a>
+                <a href="../pages/tienda.html">Tienda</a>
+                <a href="../pages/posts.html">Posts</a>
+                <a class="button" href="../index.html">Inicio</a>
+            </nav>
+        </header>
+        <div class="cuerpo">
+            <section class="about">
+                <div class="info">
+                    <h1>Ponte en Contacto con MotoGarage</h1>
+                    <h3>Preguntas, Citas y Pruebas de Manejo</h3>
+                    <p>¿Necesitas asesoramiento para elegir tu moto? Utiliza el formulario a la derecha para preguntar sobre disponibilidad, financiación o accesorios. Nuestro equipo de ventas te responderá rápidamente.</p>
+                    <p>
+                        Si deseas agendar una prueba de manejo o una cita en nuestro taller, indica la hora y el modelo de interés. Para soporte técnico o consultas urgentes, te recomendamos contactarnos por teléfono o visitar nuestra tienda física en horario comercial.
+                        <br><br>
+                        Horario de Tienda y Taller:
+                        <br>
+                        Lunes a Viernes: 09:00 - 19:00.
+                        <br>
+                        Sábados: 10:00 - 14:00. Domingos cerrado.
+                    </p>
+                </div>
+                <img src="../img/mecanico.webp" srcset="../img/mecanico.webp 1000w, ../img/mecanico-800.webp 800w" sizes="50vw"
+                    alt="" loading="eager">
+                <form action="" method="post">
+                    <h2>Tu Solicitud (Ventas, Taller, Pruebas)</h2>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name-input">Nombre</label>
+                            <input type="text" name="name-input" id="name-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="surname-input">Apellidos</label>
+                            <input type="text" name="surname-input" id="surname-input">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email-input">Email</label>
+                        <input type="email" name="email-input" id="email-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="message-input">Mensaje (Detalla tu consulta, cita o el modelo de moto)</label>
+                        <textarea name="message" id="message-input" placeholder="Ej: Me interesa el modelo 'Harley-Davidson Fat Boy'. Quiero una cita para el sábado."></textarea>
+                    </div>
+                    <button type="submit">Enviar Mensaje</button>
+                </form>
+            </section>
+        </div>
+        <div class="separador"></div>
+        <footer>
+            <div class="footer-left">
+                <div class="footer-logo">Rueda Libre Motos</div>
+                <div class="footer-socials">
+                    <a aria-label="Facebook">
+                        <svg class="social-icon">
+                            <use href="../img/fb-ico.svg#icon"></use>
+                        </svg>
+                    </a>
+                    <a aria-label="Linkedin">
+                        <svg class="social-icon">
+                            <use href="../img/ln-ico.svg#icon"></use>
+                        </svg>
+                    </a>
+                    <a aria-label="Instagram">
+                        <svg class="social-icon">
+                            <use href="../img/ig-ico.svg#icon"></use>
+                        </svg>
+                    </a>
+                    <a aria-label="Youtube">
+                        <svg class="social-icon">
+                            <use href="../img/yt-ico.svg#icon"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Modelos</th>
+                            <th>Servicios</th>
+                            <th>Compañía</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="">Deportivas</a></td>
+                            <td><a href="">Taller Oficial</a></td>
+                            <td><a href="">Quiénes Somos</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="">Cruisers</a></td>
+                            <td><a href="">Financiación</a></td>
+                            <td><a href="">Legal y Política</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="">Urbanas</a></td>
+                            <td><a href="">Recambios</a></td>
+                            <td><a href="">Únete al Equipo</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="https://unpkg.com/lenis@1.3.15/dist/lenis.min.js" loading="lazy"></script>
+<script loading="lazy">
+    if (!window.matchMedia('(max-width:500px)').matches) {
+        const lenis = new Lenis({
+            autoRaf: true,
+        });
+    }
+</script>
+
+</html>
